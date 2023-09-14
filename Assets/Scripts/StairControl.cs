@@ -15,7 +15,7 @@ public class StairControl : MonoBehaviour
     {
         if (CountEntitiesWithTag("Bone") <= 0){
             if (other.CompareTag("Player")){
-                SceneManager.LoadScene("Level1");
+                SceneManager.LoadScene("FirstFloor");
             }
         }
           
