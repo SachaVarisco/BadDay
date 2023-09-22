@@ -32,13 +32,7 @@ public class RatControl : MonoBehaviour
     private void FixedUpdate() 
     {
         float velocityX = rb2D.velocity.x;
-        /*if(velocityX > 0 && lookLeft){
-            Rotate();
-        }
-        if (velocityX < 0 && !lookLeft)
-        {
-            Rotate();
-        }*/
+       
         if (velocityX > 0) 
         {
             spriteRenderer.flipX = false; 

@@ -17,7 +17,6 @@ public class StairControl : MonoBehaviour
             if (other.CompareTag("Player")){
                 SceneManager.LoadScene("FirstFloor");
             }
-        }
-          
+        }  
     }
 }

@@ -7,10 +7,9 @@ public class BoneControl : MonoBehaviour
    // Start is called before the first frame update
    void OnTriggerEnter2D(Collider2D other)
    {
-    if (other.gameObject.tag == "Player"){
-        Debug.Log("Bone");
-       Destroy(gameObject);
-
-    }
+      if (other.gameObject.tag == "Player"){
+         SceneControl.Instance.AddBones();
+         Destroy(gameObject);
+      }
    }
 }
