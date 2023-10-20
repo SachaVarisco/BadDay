@@ -11,6 +11,8 @@ public class RatControl : MonoBehaviour
     [SerializeField] private bool lookLeft = true;
     private Rigidbody2D rb2D;
     private SpriteRenderer spriteRenderer;
+    private float velocityX;
+    private Vector3 previousPosition;
 
     // Start is called before the first frame update
     void Start()
@@ -31,16 +33,28 @@ public class RatControl : MonoBehaviour
     }
     private void FixedUpdate() 
     {
-        float velocityX = rb2D.velocity.x;
-       
-        if (velocityX > 0) 
+        
+        Speed();
+        if (velocityX > 0 && lookLeft) 
         {
-            spriteRenderer.flipX = false; 
+            //spriteRenderer.flipX = false; 
+            Rotate(); 
         }
-        else if (velocityX < 0) 
+        if (velocityX < 0 && !lookLeft)
         {
-            spriteRenderer.flipX = true;
+            Rotate(); 
         }
+    }
+    private float Speed()
+    {
+        Vector3 currentPosition = transform.position;
+        float deltaTime = Time.deltaTime;
+
+        velocityX = (currentPosition.x - previousPosition.x) / deltaTime;
+
+        previousPosition = currentPosition;
+
+        return velocityX;
     }
     private void Rotate(){
         lookLeft = !lookLeft;
@@ -48,4 +62,11 @@ public class RatControl : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
     }
+
+    public void OnCollisionEnter2D(Collision2D other)
+   {
+     if (other.gameObject.tag == "Player"){
+          other.gameObject.GetComponent<PLayerLifeControl>().TakeDamage();
+        }
+   }
 }

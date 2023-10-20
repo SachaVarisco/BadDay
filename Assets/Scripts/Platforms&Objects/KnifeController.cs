@@ -16,7 +16,7 @@ public class KnifeController : MonoBehaviour
   
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.tag == "Player"){
-            Debug.Log("AAA");
+            other.GetComponent<PLayerLifeControl>().TakeDamage();
         }
     }
 }

@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class TrapDoorControl : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private Canvas canvas;
     private void OnTriggerStay2D(Collider2D other)
     {   
-        if (Input.GetAxis("Jump")!= 0)
+        if (Input.GetButtonDown("Jump"))
         {
+            //canvas.GetComponent<SceneTransition>().ChangeScene("Basement");
             SceneManager.LoadScene("Basement");
         }
     }

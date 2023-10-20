@@ -5,16 +5,27 @@ using UnityEngine.SceneManagement;
 
 public class StairControl : MonoBehaviour
 {
+    [SerializeField] private Canvas canvas;
     private int CountEntitiesWithTag(string tag)
     {
         GameObject[] entities = GameObject.FindGameObjectsWithTag(tag);
-        return entities.Length;
+        int activeEntities = 0;
+        foreach (GameObject entitie in entities)
+        {
+            if (entitie.activeSelf)
+            {
+                activeEntities++;
+            }
+        }
+        return activeEntities;
     }
-    // Start is called before the first frame update
-    private void OnTriggerEnter2D(Collider2D other)
+
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if (CountEntitiesWithTag("Bone") <= 0){
+        if (CountEntitiesWithTag("Bone") <= 0 && Input.GetButtonDown("Jump")){
             if (other.CompareTag("Player")){
+                SceneControl.Instance.stair = true;
+                //canvas.GetComponent<SceneTransition>().ChangeScene("FirstFloor");
                 SceneManager.LoadScene("FirstFloor");
             }
         }  

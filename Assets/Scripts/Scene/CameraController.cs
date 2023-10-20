@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public GameObject player;
-    public Vector2 min;
-    public Vector2 max;
-    public float suavizado;
-    Vector2 velocity;
-
-    void FixedUpdate()
+    [SerializeField] private Vector2 min;
+    [SerializeField] private Vector2 max;
+    [SerializeField] private float suavizado;
+    [SerializeField] private Vector2 velocity;
+    private GameObject player;
+    private void Start(){
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
+    private void FixedUpdate()
     {
+        
         float posX = Mathf.SmoothDamp(transform.position.x, player.transform.position.x, ref velocity.x, suavizado);
         float posY = Mathf.SmoothDamp(transform.position.y, player.transform.position.y, ref velocity.y, suavizado);
 
