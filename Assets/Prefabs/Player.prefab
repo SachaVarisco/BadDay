@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1287529307784180925}
   - component: {fileID: -676408357477117329}
   - component: {fileID: 6360749469450831479}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -33,10 +33,11 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.23, y: -3.74, z: 0}
-  m_LocalScale: {x: 0.9899457, y: 0.9544772, z: 1.3801}
+  m_LocalScale: {x: 1.1237544, y: 1.0834917, z: 1.5666449}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6737264175945007349}
+  - {fileID: 1355143453610068582}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4340370627065098816
@@ -80,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 94445876, guid: da302ee4c29a3944ebf95eb27b930d1c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -88,7 +89,7 @@ SpriteRenderer:
   m_Size: {x: 0.85, y: 1.07}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &6658439748116586726
@@ -175,15 +176,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd4de8ee8dfa9144a34723897a7d1e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDeath: 0
   talking: 0
   speed: 4
   force: 400
   isGround:
     serializedVersion: 2
     m_Bits: 8
+  isWater:
+    serializedVersion: 2
+    m_Bits: 16
   groundControl: {fileID: 6737264175945007349}
-  boxDimension: {x: 0.5, y: 0.25, z: 0}
+  boxDimension: {x: 0.75, y: 0.25, z: 0}
   inGround: 0
+  inWater: 0
 --- !u!114 &1287529307784180925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a7f277187d914891a40d38d662fde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 2
+  damageJump: {x: 7, y: 7}
 --- !u!81 &-676408357477117329
 AudioListener:
   m_ObjectHideFlags: 0
@@ -235,7 +241,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6737264175945007349}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: feet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,3 +263,77 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6456425779667264333}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1667073185616994172
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6456425779667264333}
+    m_Modifications:
+    - target: {fileID: 426942496968824090, guid: c2dc7d2a8d9213e488871c4a3e7bc16b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.048233
+      objectReference: {fileID: 0}
+    - target: {fileID: 426942496968824090, guid: c2dc7d2a8d9213e488871c4a3e7bc16b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.9371862
+      objectReference: {fileID: 0}
+    - target: {fileID: 426942496968824090, guid: c2dc7d2a8d9213e488871c4a3e7bc16b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.008068085
+      objectReference: {fileID: 0}
+    - target: {fileID: 426942496968824090, guid: c2dc7d2a8d9213e488871c4a3e7bc16b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 426942496968824090, guid: c2dc7d2a8d9213e488871c4a3e7bc16b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426942496968824090, guid: c2dc7d2a8d9213e488871c4a3e7bc16b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426942496968824090, guid: c2dc7d2a8d9213e488871c4a3e7bc16b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426942496968824090, guid: c2dc7d2a8d9213e488871c4a3e7bc16b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426942496968824090, guid: c2dc7d2a8d9213e488871c4a3e7bc16b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426942496968824090, guid: c2dc7d2a8d9213e488871c4a3e7bc16b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2951491802904440489, guid: c2dc7d2a8d9213e488871c4a3e7bc16b, type: 3}
+      propertyPath: lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2951491802904440489, guid: c2dc7d2a8d9213e488871c4a3e7bc16b, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: 'Finally I have all my bones. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2951491802904440489, guid: c2dc7d2a8d9213e488871c4a3e7bc16b, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: Now i've to go outside.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6070503895383056925, guid: c2dc7d2a8d9213e488871c4a3e7bc16b, type: 3}
+      propertyPath: m_Name
+      value: Dialogo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c2dc7d2a8d9213e488871c4a3e7bc16b, type: 3}
+--- !u!4 &1355143453610068582 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 426942496968824090, guid: c2dc7d2a8d9213e488871c4a3e7bc16b, type: 3}
+  m_PrefabInstance: {fileID: 1667073185616994172}
+  m_PrefabAsset: {fileID: 0}

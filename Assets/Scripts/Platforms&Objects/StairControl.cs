@@ -5,29 +5,46 @@ using UnityEngine.SceneManagement;
 
 public class StairControl : MonoBehaviour
 {
-    [SerializeField] private Canvas canvas;
-    private int CountEntitiesWithTag(string tag)
-    {
-        GameObject[] entities = GameObject.FindGameObjectsWithTag(tag);
-        int activeEntities = 0;
-        foreach (GameObject entitie in entities)
+    
+    [SerializeField] private GameObject feedback;
+    private bool canPass = false;
+    private GameObject Lock;
+    private GameObject canvas;
+    private void Start() {
+        Lock = GameObject.FindGameObjectWithTag("Lock");
+        canvas = GameObject.FindGameObjectWithTag("Canva");
+    }
+    private void Update() {
+        if (canPass  && SceneTransition.Instance.canPass)
         {
-            if (entitie.activeSelf)
-            {
-                activeEntities++;
+            if (Input.GetButtonDown("Jump")){
+                SceneControl.Instance.table = true;
+                canvas.GetComponent<SceneTransition>().ChangeScene("Stair"); 
             }
         }
-        return activeEntities;
     }
-
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (CountEntitiesWithTag("Bone") <= 0 && Input.GetButtonDown("Jump")){
-            if (other.CompareTag("Player")){
-                SceneControl.Instance.stair = true;
-                //canvas.GetComponent<SceneTransition>().ChangeScene("FirstFloor");
-                SceneManager.LoadScene("FirstFloor");
+    private void OnTriggerEnter2D(Collider2D other)
+    {          
+        if (gameObject.name == "AtticDoor")
+        {
+            if ((!Lock.activeSelf || Lock == null) && other.CompareTag("Player"))
+            {
+                canPass = true;
+                SceneTransition.Instance.canPass = true;
+                feedback.SetActive(true);
             }
-        }  
+        } else if (other.CompareTag("Player")){
+            canPass = true;
+            SceneTransition.Instance.canPass = true;
+            feedback.SetActive(true);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {          
+        if (other.CompareTag("Player")){
+            canPass = false;
+            SceneTransition.Instance.canPass = false;
+            feedback.SetActive(false);   
+        } 
     }
 }

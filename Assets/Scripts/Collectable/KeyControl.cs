@@ -9,7 +9,8 @@ public class KeyControl : MonoBehaviour
    {
         if (other.gameObject.tag == "Player"){
             SceneControl.Instance.PlaySound(audio);
-            SceneControl.Instance.redKey = true;
+            SceneControl.Instance.keyName.Add(gameObject.name);
+            SceneControl.Instance.keys.sprite = SceneControl.Instance.keySprite[SceneControl.Instance.keyName.Count];
             Destroy(gameObject);
         }
    }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public bool isDeath = false;
     public bool talking = false;
 
     [Header("Speed")]
@@ -12,15 +13,17 @@ public class PlayerController : MonoBehaviour
     [Header("Jump")]
     [SerializeField] private float force;
     [SerializeField] private LayerMask isGround;
+    [SerializeField] private LayerMask isWater;
+
     [SerializeField] private Transform groundControl;
     [SerializeField] private Vector3 boxDimension;
     [SerializeField] private bool inGround;
+    [SerializeField] private bool inWater;
     private bool jump = false;
-    private bool isDeath = false;
     private bool lookLeft = false;
     private float horizontalMove;
     private Rigidbody2D rb2D;
-    private Animator animator;
+    private Animator animator; 
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -39,6 +42,7 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("MoveY", rb2D.velocity.y);
         animator.SetBool("InGround", inGround);
         inGround = Physics2D.OverlapBox(groundControl.position, boxDimension, 0f, isGround);
+        inWater = Physics2D.OverlapBox(groundControl.position, boxDimension, 0f, isWater);
         if (!isDeath)
         {
             Move(jump);
@@ -60,13 +64,14 @@ public class PlayerController : MonoBehaviour
             transform.position += new Vector3(horizontalMove, 0);
             animator.SetFloat("MoveX",Mathf.Abs(horizontalMove));
         }
-        if(inGround && jump && !talking)
+        if((inGround || inWater) && jump && !talking)
         {
             inGround = false;
             rb2D.AddForce(new Vector2(0, force));
         }
     }
     public void Spring(){
+        rb2D.velocity = new Vector3(0, 0, 0);
         rb2D.AddForce(new Vector2(0, 600));
     }
     void OnDrawGizmos()

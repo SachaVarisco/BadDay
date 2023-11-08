@@ -1,0 +1,521 @@
+fileFormatVersion: 2
+guid: 6d19ce562d8659d40af91623c9c21e2d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attic_Assets_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 757
+        width: 498
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f0605374fbaea46a983760df2926df
+      internalID: -1460302424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic_Assets_2
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 844
+        width: 247
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8196f13e683dd1b488da2e17c227a843
+      internalID: 1523455866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic_Assets_11
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 556
+        width: 291
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f044255a8f5704ea953eb11148d2ce
+      internalID: 1688949354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic_Assets_12
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 498
+        width: 319
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19a8f220f0266843a3f9c845e8f53ca
+      internalID: 2051735260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic_Assets_16
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 435
+        width: 252
+        height: 374
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a7e23c5ee6a864c813fadbfab9930f
+      internalID: -1454133216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic_Assets_17
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 435
+        width: 49
+        height: 374
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc1b22e654a4c44698e215b62cbb33f
+      internalID: -2090772791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic_Assets_23
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 656
+        width: 184
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68a0b781f0eb5844905d461b5ff0764
+      internalID: 1023658417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic_Assets_24
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 415
+        width: 371
+        height: 387
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72e0fa70718f1640a3b1bf31ca081e7
+      internalID: -472112013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic_Assets_36
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 175
+        width: 386
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553ecff0b8927d943ab5f544d52715bf
+      internalID: 1455698592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic_Assets_38
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 41
+        width: 932
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa88fd635d11794399c956c136c763a
+      internalID: -1618459493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic_Assets_39
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 96
+        width: 54
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05cd1c9cd6792dd44803dcfea8ef41d6
+      internalID: -165021005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic_Assets_40
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 95
+        width: 85
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779a01bf623c19e48b89c34d2286c707
+      internalID: -53842017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic_Assets_41
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 96
+        width: 54
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ba27a8a5005164faf3d4bf771565db
+      internalID: -756783887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic_Assets_42
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 95
+        width: 84
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8f55d1212748f43b7fcf37f5f771e0
+      internalID: 689795518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic_Assets_43
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 96
+        width: 54
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb080c5102bb1b4a8abc97f8f5f70b9
+      internalID: -1657443064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attic_Assets_44
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 95
+        width: 85
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee81e5d72c1516c41b5bed359f291757
+      internalID: -895937400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Attic_Assets_0: -1460302424
+      Attic_Assets_1: -1446178694
+      Attic_Assets_10: 625961369
+      Attic_Assets_11: 1688949354
+      Attic_Assets_12: 2051735260
+      Attic_Assets_13: -1744737702
+      Attic_Assets_14: 560508893
+      Attic_Assets_15: 1666948514
+      Attic_Assets_16: -1454133216
+      Attic_Assets_17: -2090772791
+      Attic_Assets_18: -95375133
+      Attic_Assets_19: -564670448
+      Attic_Assets_2: 1523455866
+      Attic_Assets_20: -2039257214
+      Attic_Assets_21: 761698929
+      Attic_Assets_22: -1007461240
+      Attic_Assets_23: 1023658417
+      Attic_Assets_24: -472112013
+      Attic_Assets_25: -2024645931
+      Attic_Assets_26: -1548323557
+      Attic_Assets_27: -91041400
+      Attic_Assets_28: -1291026215
+      Attic_Assets_29: -349359316
+      Attic_Assets_3: -61352118
+      Attic_Assets_30: -1137367575
+      Attic_Assets_31: -573540701
+      Attic_Assets_32: -1649252412
+      Attic_Assets_33: 1182075065
+      Attic_Assets_34: -793661640
+      Attic_Assets_35: 261234390
+      Attic_Assets_36: 1455698592
+      Attic_Assets_37: -142012987
+      Attic_Assets_38: -1618459493
+      Attic_Assets_39: -165021005
+      Attic_Assets_4: 214080377
+      Attic_Assets_40: -53842017
+      Attic_Assets_41: -756783887
+      Attic_Assets_42: 689795518
+      Attic_Assets_43: -1657443064
+      Attic_Assets_44: -895937400
+      Attic_Assets_5: 1561998881
+      Attic_Assets_6: 1590976469
+      Attic_Assets_7: -2638342
+      Attic_Assets_8: -1011099396
+      Attic_Assets_9: -1876776678
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

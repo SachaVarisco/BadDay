@@ -15,6 +15,21 @@ EditorBuildSettings:
     path: Assets/Scenes/FirstFloor.unity
     guid: 4d5613ad6d051f74986e36d7a060bd3e
   - enabled: 1
+    path: Assets/Scenes/Bedroom-Bath.unity
+    guid: f95a07bd77b6ec546afb2b8fd665d82e
+  - enabled: 1
+    path: Assets/Scenes/Vertical.unity
+    guid: b66280152fce2e24ba5265e4c1d4d21c
+  - enabled: 1
+    path: Assets/Scenes/Attic.unity
+    guid: 6df1ed665fffc4c488abcc2622b9f1ab
+  - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: de58698ecdfb82e46969add1efcfc6b7
+  - enabled: 1
+    path: Assets/Scenes/Garden.unity
+    guid: 80d886848987e1f42ab6895a3719f09c
+  - enabled: 1
+    path: Assets/Scenes/Finish.unity
+    guid: 6aecebc1f9c9db54d84e2f12bbca039f
   m_configObjects: {}

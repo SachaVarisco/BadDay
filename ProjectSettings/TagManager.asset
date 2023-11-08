@@ -7,6 +7,9 @@ TagManager:
   - Bone
   - Dish
   - Canva
+  - Key
+  - Lock
+  - SceneControl
   layers:
   - Default
   - TransparentFX
@@ -15,10 +18,10 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
-  - 
-  - 
-  - 
+  - Knife
+  - Wood
+  - Anvil
+  - Collider
   - 
   - 
   - 
